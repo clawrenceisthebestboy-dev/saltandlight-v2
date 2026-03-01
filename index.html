@@ -45,8 +45,10 @@ nav.scrolled{background:rgba(8,14,12,.94);backdrop-filter:blur(20px);padding:16p
 .nav-call:hover{background:var(--gold)!important}
 .nav-book{border:1px solid rgba(212,132,122,.4)!important;color:var(--crystal)!important;padding:10px 22px;border-radius:1px;transition:all .3s!important}
 .nav-book:hover{background:rgba(212,132,122,.1)!important}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}
-.hamburger span{width:22px;height:1px;background:var(--cream);transition:all .3s}
+.hamburger{display:none;flex-direction:column;gap:6px;cursor:pointer;padding:10px;margin:-10px;-webkit-tap-highlight-color:transparent}
+.hamburger span{width:26px;height:2px;background:var(--crystal);border-radius:2px;transition:all .3s;display:block}
+.hamburger-wrap{display:none;align-items:center;gap:8px;cursor:pointer;padding:10px;margin:-10px}
+.hamburger-wrap .menu-label{font-size:.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--crystal)}
 
 /* MOBILE MENU */
 .mobile-menu{position:fixed;inset:0;background:var(--black);z-index:99;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:36px;transform:translateX(100%);transition:transform .5s cubic-bezier(.77,0,.175,1)}
@@ -258,7 +260,7 @@ footer{background:var(--black);padding:72px 5% 36px;border-top:1px solid rgba(25
 /* RESPONSIVE */
 @media(max-width:880px){
   .nav-links{display:none}
-  .hamburger{display:flex}
+  .hamburger{display:flex!important}
   .stats{grid-template-columns:repeat(2,1fr)}
   .svc-intro,.svc-grid,.loc-grid{grid-template-columns:1fr}
   .pstrip{grid-template-columns:1fr;height:auto}
@@ -309,7 +311,10 @@ footer{background:var(--black);padding:72px 5% 36px;border-top:1px solid rgba(25
     <li><a href="tel:+12073554141" class="nav-call">&#128222; Call Now</a></li>
     <li><a href="booking.html" class="nav-book">Book</a></li>
   </ul>
-  <div class="hamburger" onclick="openMM()"><span></span><span></span><span></span></div>
+  <button class="hamburger" onclick="openMM()" aria-label="Open menu" style="background:none;border:1px solid rgba(212,132,122,0.35);border-radius:4px;padding:10px 14px;display:none;flex-direction:column;gap:6px;cursor:pointer;align-items:center">
+  <span></span><span></span><span></span>
+  <span style="font-size:.5rem;letter-spacing:2px;text-transform:uppercase;color:var(--crystal);margin-top:2px;height:auto;width:auto;background:none;border-radius:0">MENU</span>
+</button>
 </nav>
 
 <section class="hero">
