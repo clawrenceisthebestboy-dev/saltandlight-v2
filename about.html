@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Our Story — Salt &amp; Light Wellness | North Conway NH</title>
-<meta name="description" content="Salt &amp; Light Wellness in North Conway, NH — our story, our mission, and why we built the White Mountains' most advanced wellness studio.">
+<meta name="description" content="Meet Candie and Seth Allen — the husband-and-wife team behind Salt &amp; Light Wellness in North Conway, NH.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -21,14 +21,11 @@ nav.scrolled{background:rgba(8,14,12,.94);backdrop-filter:blur(20px);padding:16p
 .nav-call{background:var(--crystal)!important;color:var(--black)!important;padding:10px 22px;border-radius:1px;font-weight:600!important}
 .nav-call:hover{background:var(--gold)!important}
 .nav-book{border:1px solid rgba(212,132,122,.4)!important;color:var(--crystal)!important;padding:10px 22px;border-radius:1px}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}
-.hamburger span{width:22px;height:1px;background:var(--cream)}
 .mobile-menu{position:fixed;inset:0;background:var(--black);z-index:99;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:36px;transform:translateX(100%);transition:transform .5s cubic-bezier(.77,0,.175,1)}
 .mobile-menu.open{transform:translateX(0)}
 .mobile-menu a{font-family:var(--serif);font-size:2.8rem;font-weight:300;color:var(--cream);text-decoration:none}
 .m-close{position:absolute;top:24px;right:5%;background:none;border:none;color:var(--muted);font-size:1.4rem;cursor:pointer}
 .m-call{color:var(--crystal)!important;font-size:1rem!important;font-family:var(--sans)!important;letter-spacing:4px!important;text-transform:uppercase;margin-top:16px}
-
 .page-hero{padding:160px 5% 80px;position:relative;overflow:hidden}
 .page-hero::before{content:'';position:absolute;inset:0;background:url(salt-wall-real.jpg) center/cover;opacity:.12}
 .page-hero-c{position:relative;z-index:2;max-width:1080px;margin:0 auto}
@@ -36,7 +33,6 @@ nav.scrolled{background:rgba(8,14,12,.94);backdrop-filter:blur(20px);padding:16p
 .breadcrumb a{color:var(--crystal);text-decoration:none}
 .page-hero h1{font-family:var(--serif);font-size:clamp(3rem,7vw,5.5rem);font-weight:300;line-height:1.05;color:var(--cream)}
 .page-hero h1 em{font-style:italic;color:var(--crystal)}
-
 .sec{padding:100px 5%}
 .inner{max-width:1080px;margin:0 auto}
 .slabel{font-size:.65rem;letter-spacing:4px;text-transform:uppercase;color:var(--crystal);margin-bottom:14px;display:block}
@@ -45,42 +41,33 @@ nav.scrolled{background:rgba(8,14,12,.94);backdrop-filter:blur(20px);padding:16p
 .div{width:50px;height:1px;background:var(--crystal);margin:22px 0}
 .btn-p{display:inline-flex;align-items:center;gap:10px;background:var(--crystal);color:var(--black);padding:14px 32px;font-size:.72rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;text-decoration:none;border-radius:1px;transition:background .3s}
 .btn-p:hover{background:var(--gold)}
-
-/* STORY */
-.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-bottom:80px}
-.story-img{overflow:hidden;border:1px solid rgba(255,255,255,.07)}
-.story-img img{width:100%;height:420px;object-fit:cover;transition:transform .8s}
-.story-img:hover img{transform:scale(1.04)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;margin-bottom:100px}
+.intro-img{overflow:hidden;border:1px solid rgba(255,255,255,.07)}
+.intro-img img{width:100%;height:480px;object-fit:cover;object-position:top;transition:transform .8s}
+.intro-img:hover img{transform:scale(1.04)}
 .story-text p{font-size:.9rem;color:var(--muted);line-height:1.95;font-weight:300;margin-bottom:20px}
 .pull-quote{font-family:var(--serif);font-size:1.5rem;font-weight:300;color:var(--cream);line-height:1.5;border-left:2px solid var(--crystal);padding-left:28px;margin:36px 0;font-style:italic}
-
-/* VALUES */
-.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
-.val-item{padding:36px 28px;border:1px solid rgba(255,255,255,.06);transition:border-color .3s}
-.val-item:hover{border-color:rgba(212,132,122,.3)}
-.val-icon{font-size:1.8rem;margin-bottom:16px;display:block}
-.val-item h4{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:var(--cream);margin-bottom:10px}
-.val-item p{font-size:.83rem;color:var(--muted);line-height:1.8;font-weight:300}
-
-/* LOCATION STORY */
-.location-story{background:var(--surface);padding:80px 5%;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05)}
-.loc-content{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-.loc-content img{width:100%;height:340px;object-fit:cover;border:1px solid rgba(255,255,255,.07)}
-
-/* TIMELINE */
-.timeline{margin-top:60px}
-.tl-item{display:grid;grid-template-columns:80px 1fr;gap:28px;margin-bottom:44px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.05)}
-.tl-item:last-child{border-bottom:none}
-.tl-year{font-family:var(--serif);font-size:1.4rem;font-weight:300;color:var(--crystal)}
-.tl-content h4{font-family:var(--serif);font-size:1.2rem;font-weight:400;color:var(--cream);margin-bottom:8px}
-.tl-content p{font-size:.85rem;color:var(--muted);line-height:1.8;font-weight:300}
-
-/* CTA */
-.cta-band{background:var(--surface);border:1px solid rgba(255,255,255,.06);padding:52px;text-align:center;margin-top:80px}
+.meet-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-bottom:100px}
+.meet-card{background:var(--surface);border:1px solid rgba(255,255,255,.06);overflow:hidden}
+.meet-card img{width:100%;height:340px;object-fit:cover;object-position:top;display:block}
+.meet-body{padding:36px 32px}
+.meet-name{font-family:var(--serif);font-size:1.8rem;font-weight:300;color:var(--cream);margin-bottom:6px}
+.meet-role{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--crystal);margin-bottom:20px;display:block}
+.meet-body p{font-size:.88rem;color:var(--muted);line-height:1.9;font-weight:300;margin-bottom:14px}
+.why-section{background:var(--surface);padding:80px 5%;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);margin-bottom:100px}
+.why-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.why-text p{font-size:.9rem;color:var(--muted);line-height:1.95;font-weight:300;margin-bottom:20px}
+.mission-band{border:1px solid rgba(212,132,122,.2);padding:56px;margin-bottom:80px;position:relative;overflow:hidden}
+.mission-band::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,132,122,.05),transparent)}
+.mission-band blockquote{font-family:var(--serif);font-size:clamp(1.4rem,2.5vw,2rem);font-weight:300;color:var(--cream);line-height:1.6;font-style:italic;position:relative;z-index:1}
+.mission-band cite{display:block;margin-top:20px;font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--crystal);font-style:normal}
+.cta-band{background:var(--surface);border:1px solid rgba(255,255,255,.06);padding:52px;text-align:center}
 .cta-band h2{font-family:var(--serif);font-size:2.4rem;font-weight:300;margin-bottom:12px}
 .cta-band h2 em{font-style:italic;color:var(--crystal)}
 .cta-band p{font-size:.88rem;color:var(--muted);margin-bottom:32px;line-height:1.7}
-
+.location-story{padding:80px 5%;border-top:1px solid rgba(255,255,255,.05)}
+.loc-content{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.loc-content img{width:100%;height:340px;object-fit:cover;border:1px solid rgba(255,255,255,.07)}
 footer{background:var(--black);padding:52px 5% 28px;border-top:1px solid rgba(255,255,255,.04)}
 .fbot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
 .fbot p{font-size:.72rem;color:rgba(240,237,232,.25)}
@@ -92,11 +79,11 @@ footer{background:var(--black);padding:52px 5% 28px;border-top:1px solid rgba(25
 .rr{opacity:0;transform:translateX(28px);transition:opacity .7s ease,transform .7s ease}
 .r.v,.rl.v,.rr.v{opacity:1;transform:none}
 @media(max-width:880px){
-  .nav-links{display:none}.hamburger{display:flex!important}
-  .story-grid,.loc-content{grid-template-columns:1fr}
-  .values-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .intro-grid,.meet-grid,.why-inner,.loc-content{grid-template-columns:1fr}
   .float-bar{display:block}
-  .cta-band{padding:36px 24px}
+  .cta-band,.mission-band{padding:36px 24px}
+  .meet-card img{height:260px}
 }
 </style>
 </head>
@@ -120,76 +107,93 @@ footer{background:var(--black);padding:52px 5% 28px;border-top:1px solid rgba(25
     <li><a href="tel:+12073194141" class="nav-call">&#128222; Call Now</a></li>
     <li><a href="booking.html" class="nav-book">Book</a></li>
   </ul>
-  <button class="hamburger" onclick="openMM()" aria-label="Open menu" style="background:none;border:1px solid rgba(212,132,122,0.35);border-radius:4px;padding:10px 14px;display:none;flex-direction:column;gap:6px;cursor:pointer;align-items:center">
-  <span></span><span></span><span></span>
-  <span style="font-size:.5rem;letter-spacing:2px;text-transform:uppercase;color:var(--crystal);margin-top:2px;height:auto;width:auto;background:none;border-radius:0">MENU</span>
-</button>
+  <button onclick="openMM()" aria-label="Open menu" style="background:none;border:1px solid rgba(212,132,122,0.35);border-radius:4px;padding:10px 14px;display:none;flex-direction:column;gap:6px;cursor:pointer;align-items:center">
+    <span style="width:22px;height:1px;background:var(--cream);display:block"></span>
+    <span style="width:22px;height:1px;background:var(--cream);display:block"></span>
+    <span style="width:22px;height:1px;background:var(--cream);display:block"></span>
+    <span style="font-size:.5rem;letter-spacing:2px;text-transform:uppercase;color:var(--crystal);margin-top:2px">MENU</span>
+  </button>
 </nav>
 
 <div class="page-hero">
   <div class="page-hero-c">
     <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Our Story</div>
-    <h1>Born from a<br><em>belief in balance.</em></h1>
+    <h1>Healing begins<br><em>with hope.</em></h1>
   </div>
 </div>
 
 <section class="sec">
   <div class="inner">
-    <div class="story-grid">
-      <div class="story-img rl"><img src="room-pro.jpg" alt="Salt &amp; Light Wellness Room"></div>
+
+    <div class="intro-grid">
+      <div class="intro-img rl"><img src="candie-seth-polaroid.jpg" alt="Candie and Seth Allen"></div>
       <div class="rr">
-        <span class="slabel">Why We Built This</span>
-        <h2 class="stitle">Wellness shouldn't<br><em>require a trip to the city.</em></h2>
+        <span class="slabel">Welcome</span>
+        <h2 class="stitle">We're Candie &amp; Seth Allen.</h2>
         <div class="div"></div>
         <div class="story-text">
-          <p>Salt &amp; Light Wellness was founded on a simple idea: the most powerful healing therapies in the world shouldn't only exist in expensive urban spas or clinical settings. The White Mountains region deserved better.</p>
-          <p>We brought Medical Grade 2 red light therapy and pharmaceutical-grade halotherapy together in a single private booth — the Red Light / Halotherapy Booth experience — and paired it with PEMI Mat electromagnetic technology. The result is a wellness studio built around real science, real equipment, and real results.</p>
-          <div class="pull-quote">"We're not selling relaxation. We're selling cellular restoration. The peace is a side effect."</div>
-          <p>Located inside Meraki Salon &amp; Spa on White Mountain Highway in North Conway, NH, we've created a space where members from Conway to Jackson, Bartlett to Tamworth, come for consistent, measurable improvement in how they feel, how they look, and how they recover.</p>
+          <p>Salt &amp; Light Wellness is more than a studio — it's something we built out of personal need, deep faith, and a genuine desire to help people feel better naturally.</p>
+          <p>After years of facing chronic health struggles, pain, and inflammation ourselves, we discovered red light therapy, PEMI Therapy, and halotherapy. The results changed our lives. So on September 15, 2024, we opened our doors — and began healing alongside the community we love.</p>
+          <div class="pull-quote">"Salt &amp; Light Wellness is more than a service — it's a calling."</div>
+          <p>We're not a franchise. We're not a chain. We're your neighbors, and we're healing right alongside you.</p>
         </div>
       </div>
     </div>
 
-    <div>
-      <span class="slabel r">What Guides Us</span>
-      <h2 class="stitle r">Our values.</h2>
-      <div class="values-grid">
-        <div class="val-item r">
-          <span class="val-icon">&#127775;</span>
-          <h4>Science Over Trends</h4>
-          <p>Every therapy we offer has an extensive body of peer-reviewed research behind it. We chose Medical Grade 2 equipment because it delivers therapeutic doses — not wellness-grade light that looks nice but does little.</p>
+    <span class="slabel r">The People Behind It</span>
+    <h2 class="stitle r">Meet the Allens.</h2>
+    <div class="meet-grid" style="margin-top:36px">
+      <div class="meet-card r">
+        <img src="candie-seth-2.jpg" alt="Candie Allen">
+        <div class="meet-body">
+          <div class="meet-name">Candie Allen</div>
+          <span class="meet-role">Co-Founder &nbsp;·&nbsp; Also known as Candie Tremblay in music</span>
+          <p>At age 30, Candie survived a life-threatening case of endometriosis and underwent a hysterectomy. What followed were years of surgical menopause, chronic pain, inflammation, and weight gain that nothing seemed to help.</p>
+          <p>Her sister introduced her to red light therapy after her own surgeries — but it wasn't until Salt &amp; Light opened that Candie truly experienced the full benefits. Since then, she's lost 20 pounds she'd carried for seven years, and gained better sleep, a brighter mood, clearer skin, and significantly less inflammation from Ulcerative Colitis.</p>
+          <p>A lifelong entrepreneur at heart, creating a space where others could access natural, non-invasive healing just made sense.</p>
         </div>
-        <div class="val-item r" style="transition-delay:.1s">
-          <span class="val-icon">&#128274;</span>
-          <h4>Complete Privacy</h4>
-          <p>Your healing is yours. Every session is completely private — no groups, no strangers, no observation. You enter your space, you're in control, and you leave when you're ready.</p>
-        </div>
-        <div class="val-item r" style="transition-delay:.2s">
-          <span class="val-icon">&#128200;</span>
-          <h4>Measurable Results</h4>
-          <p>We believe in showing people why this works, not just telling them. We encourage clients to track their results — skin photos, energy journals, inflammation markers. The science is on our side.</p>
-        </div>
-        <div class="val-item r" style="transition-delay:.3s">
-          <span class="val-icon">&#127758;</span>
-          <h4>Accessible Wellness</h4>
-          <p>Membership tiers start at $175/month — designed to make consistent therapy accessible to people with real lives and real budgets. Great wellness shouldn't require a luxury price tag.</p>
-        </div>
-        <div class="val-item r" style="transition-delay:.4s">
-          <span class="val-icon">&#127752;</span>
-          <h4>Rooted in the Community</h4>
-          <p>We're not a franchise. We're not a chain. We're your neighbors, and we built this specifically for the Mount Washington Valley community — for skiers recovering from knee injuries, parents who need 20 minutes of peace, and everyone in between.</p>
-        </div>
-        <div class="val-item r" style="transition-delay:.5s">
-          <span class="val-icon">&#9881;&#65039;</span>
-          <h4>Honest Business Practices</h4>
-          <p>Cash pricing, shown clearly. Card surcharge disclosed upfront. No contracts. No aggressive upsells. No fake urgency. You know exactly what you're paying and why.</p>
+      </div>
+      <div class="meet-card r" style="transition-delay:.15s">
+        <img src="candie-seth-polaroid.jpg" alt="Seth Allen" style="object-position:center">
+        <div class="meet-body">
+          <div class="meet-name">Seth Allen</div>
+          <span class="meet-role">Co-Founder &nbsp;·&nbsp; Owner, Snow &amp; Stone Works</span>
+          <p>Seth is a stone mason and has owned Snow &amp; Stone Works since 2017. Years of hard physical labor left his body inflamed, worn down, and in pain — often coming home barely able to move.</p>
+          <p>This past winter, he thought he wouldn't be able to snowboard for the first time in years. But thanks to regular red light and PEMI therapy, he not only found relief — he got back on the slopes.</p>
+          <p>Seth's story is proof that these therapies work for people who work hard with their bodies every single day.</p>
         </div>
       </div>
     </div>
 
+  </div>
+</section>
+
+<div class="why-section">
+  <div class="why-inner">
+    <div class="rl">
+      <span class="slabel">The Origin</span>
+      <h2 class="stitle">Why we<br><em>started this.</em></h2>
+      <div class="div"></div>
+    </div>
+    <div class="why-text rr">
+      <p>One morning, while getting ready, Candie thought: <em>"I wish someone around here offered red light therapy."</em> And then it hit her — why not us?</p>
+      <p>They couldn't afford to put high-quality equipment in their home. But if they built a business, they could share these tools with their entire community. They prayed and asked God to open the door if this was meant to be.</p>
+      <p>Within weeks, an opportunity appeared at Meraki Salon &amp; Spa. Just six months later, Salt &amp; Light Wellness was born.</p>
+    </div>
+  </div>
+</div>
+
+<section class="sec" style="padding-top:80px">
+  <div class="inner">
+    <div class="mission-band r">
+      <blockquote>
+        "We offer red light therapy, PEMI, and halotherapy in a peaceful, welcoming environment that blends science-backed technology with holistic care. We're healing as we help others heal — and we can't wait to support you on your wellness path." &#10084;&#65039;
+        <cite>— Candie &amp; Seth Allen, Founders</cite>
+      </blockquote>
+    </div>
     <div class="cta-band r">
-      <h2>Come see<br><em>what we've built.</em></h2>
-      <p>We'd love to show you the space, answer any questions, and help you find the right session for your goals.</p>
+      <h2>Come meet us<br><em>in person.</em></h2>
+      <p>We'd love to show you the space, answer your questions, and help you find the right session for your goals. No pressure. No contracts. Just results.</p>
       <a href="tel:+12073194141" class="btn-p">&#128222; Call Us — (207) 319-4141</a>
     </div>
   </div>
@@ -201,7 +205,7 @@ footer{background:var(--black);padding:52px 5% 28px;border-top:1px solid rgba(25
       <span class="slabel">Find Us</span>
       <h2 class="stitle">Inside Meraki<br><em>Salon &amp; Spa.</em></h2>
       <div class="div"></div>
-      <p style="font-size:.9rem;color:var(--muted);line-height:1.9;font-weight:300;margin-bottom:28px">We're located inside Meraki Salon &amp; Spa at 1847 White Mountain Highway in North Conway — the wellness anchor of the Mount Washington Valley. Come in through the main entrance and follow the signs to Salt &amp; Light.</p>
+      <p style="font-size:.9rem;color:var(--muted);line-height:1.9;font-weight:300;margin-bottom:28px">Located inside Meraki Salon &amp; Spa on White Mountain Highway in North Conway — the wellness hub of the Mount Washington Valley.</p>
       <p style="font-size:.85rem;color:var(--muted);margin-bottom:8px">&#128205; &nbsp;2967 White Mountain Hwy, North Conway, NH</p>
       <p style="font-size:.85rem;color:var(--muted);margin-bottom:8px">&#128222; &nbsp;<a href="tel:+12073194141" style="color:var(--crystal);text-decoration:none">(207) 319-4141</a></p>
       <p style="font-size:.85rem;color:var(--muted)">&#9993;&#65039; &nbsp;<a href="mailto:saltandlightwellnessnh@gmail.com" style="color:var(--crystal);text-decoration:none">saltandlightwellnessnh@gmail.com</a></p>
